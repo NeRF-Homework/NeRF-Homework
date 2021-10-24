@@ -25,10 +25,6 @@ TODO 7 : Complete the optimizers parameters (learning rate, beta_1, beta_2). Ans
 Finally, answer in which Color Space are the inputs of the neural network. Why do you think this Color space is used? Discuss about its importance. In the load_blender.py (load_blender_data function) you will find a hint.
 
 ## Part 2: Training NeRF (1 pt)
-Now download the datasets:
-```
-bash download_example_data.sh
-```
 
 You will train a low-res (due to computational resources) `lego` NeRF in the following way:
 ```
