@@ -46,11 +46,14 @@ In your report discuss about the result you obtained. Compare the PSNR you obtai
 For the bonus vary a hyperparameter of the NeRF architecture in the argparser (e.g. netdepth, netwidth, netdepth_fine, netwidth_fine, N_importance (it would be interesting to increase it since it was 0 for the low resulation previously implemented, however, it would require much more rendering time), multires (you already discussed about this hyperparameter), multires_view (you already discussed about this hyperparameter), etc). Discuss about the result you obtained compared to the baseline.  
 
 ## D-NeRF
+
 <p align="center">
-<img src='https://www.albertpumarola.com/images/2021/D-NeRF/teaser2.gif' align="right" width=400>
+<img src='https://www.albertpumarola.com/images/2021/D-NeRF/teaser2.gif' >
 </p>
+
 ## Part 3: Installation
 Run the following commands:
+
 ```
 cd D-NeRF
 conda create -n dnerf python=3.6
