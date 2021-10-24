@@ -30,15 +30,17 @@ Now download the datasets:
 bash download_example_data.sh
 ```
 
-To train a low-res `lego` NeRF:
+You will train a low-res (due to computational resources) `lego` NeRF in the following way:
 ```
 CUDA_VISIBLE_DEVICES=x taskset -c n-m python run_nerf.py --config configs/lego.txt
 ```
 After training for 50k iterations (~3-4 hours on a single GPU), you can find the resulting video at `logs/lego_test/lego_test_spiral_100000_rgb.mp4`.
 
-![](https://user-images.githubusercontent.com/7057863/78473103-9353b300-7770-11ea-98ed-6ba2d877b62c.gif)
+<p align="center">
+  <img src=![](https://user-images.githubusercontent.com/7057863/78473103-9353b300-7770-11ea-98ed-6ba2d877b62c.gif) />
+</p>
 
-
+In your report discuss about the result you obtained.
 
 ## D-NeRF
 
