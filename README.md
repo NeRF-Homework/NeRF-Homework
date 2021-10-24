@@ -15,13 +15,12 @@ In this section you will be completing the code according to the explanations gi
 Now we present a list of the TODO's you have to complete in their respective order and the file in which they are located.
 
 1. TODO 1 : define K as the camera parameters matrix. location: run_nerf.py 
-2. TODO 2 : Report the functionality of get_embedder. 
-3. TODO 3 : 
-4. TODO 4 : 
-5. TODO 5 : 
-6. TODO 6 : 
-7. TODO 7 : 
-
+2. TODO 2 : Report the functionality of get_embedder. location: run_nerf.py
+3. TODO 3 : Discuss: Why do we call the function get_embedder again? How did the parameters vary this time? Relate your answer to the NeRF paper. location: run_ner.py
+4. TODO 4 : Complete the None´s to instantiate the fully connected network of NeRF. location: run_nerf_helpers.py. In your report justify the modifications you made.
+5. TODO 5 : Complete the None´s to instantiate the fully connected network of NeRF. location: run_nerf_helpers.py. In your report justify the modifications you made.
+6. TODO 6 : Complete the fine network parameters according to the Coarse implementation. location: run_nerf.py
+7. TODO 7 : Complete the optimizers parameters (learning rate, beta_1, beta_2). Answer: What is the role of these betas in the Adam optimizer?
 
 ## Part 2: Training NeRF
 Now download the datasets:
