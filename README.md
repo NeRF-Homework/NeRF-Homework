@@ -22,6 +22,8 @@ Now we present a list of the TODO's you have to complete in their respective ord
 6. TODO 6 : Complete the fine network parameters according to the Coarse implementation. location: run_nerf.py
 7. TODO 7 : Complete the optimizers parameters (learning rate, beta_1, beta_2). Answer: What is the role of these betas in the Adam optimizer?
 
+Finally, answer in which Color Space are the inputs of the neural network. Why do you think this Color space is used? Discuss about its importance. In the load_blender.py (load_blender_data function) you will find a hint.
+
 ## Part 2: Training NeRF
 Now download the datasets:
 ```
