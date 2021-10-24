@@ -10,6 +10,18 @@ conda activate pytorch
 pip install -r requirements.txt
 ```
 ## Part 1: Completing the code
+In this section you will be completing the code according to the explanations given in class. We marked the parts of the code you must fill in with "TODO"'s. Some of them have hints in the code itself. Please, after doing a "TODO" section, exchange the word "TODO" to "DONE" so that we can examine your code easier during evaluation. 
+
+Now we present a list of the TODO's you have to complete in their respective order and the file in which they are.
+
+1. TODO 1 : define K as the camera parameters matrix. location: run_nerf.py 
+2. TODO 2 : 
+3. TODO 3 : 
+4. TODO 4 : 
+5. TODO 5 : 
+6. TODO 6 : 
+7. TODO 7 : 
+
 
 ## Part 2: Training NeRF
 Now download the datasets:
@@ -19,7 +31,7 @@ bash download_example_data.sh
 
 To train a low-res `lego` NeRF:
 ```
-python run_nerf.py --config configs/lego.txt
+CUDA_VISIBLE_DEVICES=x taskset -c n-m python run_nerf.py --config configs/lego.txt
 ```
 After training for 50k iterations (~3-4 hours on a single GPU), you can find the resulting video at `logs/lego_test/lego_test_spiral_100000_rgb.mp4`.
 
