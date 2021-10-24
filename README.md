@@ -12,10 +12,10 @@ pip install -r requirements.txt
 ## Part 1: Completing the code
 In this section you will be completing the code according to the explanations given in class. We marked the parts of the code you must fill in with "TODO"'s. Some of them have hints in the code itself. Please, after doing a "TODO" section, exchange the word "TODO" to "DONE" so that we can examine your code easier during evaluation. 
 
-Now we present a list of the TODO's you have to complete in their respective order and the file in which they are.
+Now we present a list of the TODO's you have to complete in their respective order and the file in which they are located.
 
 1. TODO 1 : define K as the camera parameters matrix. location: run_nerf.py 
-2. TODO 2 : 
+2. TODO 2 : Report the functionality of get_embedder. 
 3. TODO 3 : 
 4. TODO 4 : 
 5. TODO 5 : 
