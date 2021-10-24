@@ -9,22 +9,22 @@ cd nerf-pytorch
 conda activate pytorch
 pip install -r requirements.txt
 ```
-## Part 1: Completing the code
-In this section you will be completing the code according to the explanations given in class. We marked the parts of the code you must fill in with "TODO"'s. Some of them have hints in the code itself. Please, after doing a "TODO" section, exchange the word "TODO" to "DONE" so that we can examine your code easier during evaluation. 
+## Part 1: Completing the code (2.5 pts)
+In this section you will be completing the code according to the explanations given in class. We marked the parts of the code you must fill in with "TODO"s. Most of them have hints in the code itself. Please, after doing a "TODO" section, exchange the word "TODO" to "DONE" so that we can examine your code easier during evaluation. 
 
-Now we present a list of the TODO's you have to complete in their respective order and the file in which they are located.
+Now we present a list of the TODO's you have to complete in their respective order and the file in which they are located (Location).
 
-1. TODO 1 : define K as the camera parameters matrix. location: run_nerf.py 
-2. TODO 2 : Report the functionality of get_embedder. location: run_nerf.py
-3. TODO 3 : Discuss: Why do we call the function get_embedder again? How did the parameters vary this time? Relate your answer to the NeRF paper. location: run_ner.py
-4. TODO 4 : Complete the None´s to instantiate the fully connected network of NeRF. location: run_nerf_helpers.py. In your report justify the modifications you made.
-5. TODO 5 : Complete the None´s to instantiate the fully connected network of NeRF. location: run_nerf_helpers.py. In your report justify the modifications you made.
-6. TODO 6 : Complete the fine network parameters according to the Coarse implementation. location: run_nerf.py
-7. TODO 7 : Complete the optimizers parameters (learning rate, beta_1, beta_2). Answer: What is the role of these betas in the Adam optimizer?
+TODO 1 : Define K as the camera parameters matrix. Location: run_nerf.py 
+TODO 2 : Report the functionality of get_embedder. Location: run_nerf.py
+TODO 3 : Discuss: Why do we call the function get_embedder again? How did the parameters vary this time? Relate your answer to the NeRF paper. Location: run_nerf.py
+TODO 4 : Complete the None´s to instantiate the fully connected network of NeRF. Location: run_nerf_helpers.py. In your report justify the modifications you made.
+TODO 5 : Complete the None´s to instantiate the fully connected network of NeRF. Location: run_nerf_helpers.py. In your report justify the modifications you made.
+TODO 6 : Complete the fine network parameters according to the Coarse implementation. Location: run_nerf.py
+TODO 7 : Complete the optimizers parameters (learning rate, beta_1, beta_2). Answer: What is the role of these betas in the Adam optimizer? Location: run_nerf.py
 
 Finally, answer in which Color Space are the inputs of the neural network. Why do you think this Color space is used? Discuss about its importance. In the load_blender.py (load_blender_data function) you will find a hint.
 
-## Part 2: Training NeRF
+## Part 2: Training NeRF (1 pt)
 Now download the datasets:
 ```
 bash download_example_data.sh
@@ -40,7 +40,24 @@ After training for 50k iterations (~3-4 hours on a single GPU), you can find the
   <img src="https://user-images.githubusercontent.com/7057863/78473103-9353b300-7770-11ea-98ed-6ba2d877b62c.gif" />
 </p>
 
-In your report discuss about the result you obtained.
+In your report discuss about the result you obtained. Compare the PSNR you obtained with the one in the NeRF paper.
+
+## Bonus (0.5 pt)
+For the bonus vary a hyperparameter of the NeRF architecture in the argparser (e.g. netdepth, netwidth, netdepth_fine, netwidth_fine, N_importance (it would be interesting to increase it since it was 0 for the low resulation previously implemented, however, it would require much more rendering time), multires (you already discussed about this hyperparameter), multires_view (you already discussed about this hyperparameter), etc). Discuss about the result you obtained compared to the baseline.  
 
 ## D-NeRF
-
+<p align="center">
+<img src='https://www.albertpumarola.com/images/2021/D-NeRF/teaser2.gif' align="right" width=400>
+</p>
+## Part 3: Installation
+Run the following commands:
+```
+cd D-NeRF
+conda create -n dnerf python=3.6
+conda activate dnerf
+conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+pip install -r requirements.txt
+cd torchsearchsorted
+pip install .
+cd ..
+```
